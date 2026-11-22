@@ -14,7 +14,6 @@ origines = []
 # 1.1
 url_hn = "https://hn.algolia.com/api/v1/search?" + urllib.parse.urlencode(
     {"query": theme, "tags": "story", "hitsPerPage": 50})
-print(url_hn)
 
 with urllib.request.urlopen(url_hn) as reponse:
     d_hn = json.load(reponse)
