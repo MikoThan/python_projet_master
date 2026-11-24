@@ -7,9 +7,6 @@ class Document:
         self.url = url
         self.texte = texte
 
-    def afficher_pas_digeste(self):
-        return f"{self.titre} - par {self.auteur} le {self.date}. Source : {self.url}. {self.texte}"
-
     def __str__(self):
         sortie = f"{self.titre} de {self.auteur}"
         sortie += {self.texte}
